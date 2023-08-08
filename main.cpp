@@ -19,8 +19,13 @@ int binarySearch(const std::vector<int>& vec, int target) {
 }
 
 int main() {
-    std::vector<int> vec = {64, 34, 25, 12, 22, 11, 90};  
-    int target = 23;
-    std::cout << binarySearch(vec, target);
+    std::vector<int> vec = {11, 22, 33, 44, 55, 66, 77};  
+    int target = 22;
+    int result = binarySearch(vec, target);
+    if (result != -1) {
+        std::cout << "Target found at index: " << result << std::endl;
+    } else {
+        std::cout << "Target not found in the vector." << std::endl;
+    }
 }
  
